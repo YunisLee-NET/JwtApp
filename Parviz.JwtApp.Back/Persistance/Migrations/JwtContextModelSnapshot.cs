@@ -2,19 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Parviz.JwtApp.Back.Persistance.Context;
 
 #nullable disable
 
-namespace Parviz.JwtApp.Back.Migrations
+namespace Parviz.JwtApp.Back.Persistance.Migrations
 {
     [DbContext(typeof(JwtContext))]
-    [Migration("20230211203329_IntitialCreate")]
-    partial class IntitialCreate
+    partial class JwtContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

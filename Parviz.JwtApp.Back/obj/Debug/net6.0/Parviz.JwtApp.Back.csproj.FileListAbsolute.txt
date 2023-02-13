@@ -60,3 +60,8 @@ E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\obj\Debug\net6.0\refint\Parviz.J
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\obj\Debug\net6.0\Parviz.JwtApp.Back.pdb
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\obj\Debug\net6.0\Parviz.JwtApp.Back.genruntimeconfig.cache
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\obj\Debug\net6.0\ref\Parviz.JwtApp.Back.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\AutoMapper.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.Contracts.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

@@ -10,10 +10,12 @@ namespace Parviz.JwtApp.Back.Persistance.Context
         {
 
         }
-        public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<AppRole> AppRoles { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
+
+        //Her iki variant uygundur.
+        public DbSet<AppUser> AppUsers => this.Set<AppUser>();
+        public DbSet<AppRole> AppRoles => this.Set<AppRole>();
+        public DbSet<Category> Categories { get { return this.Set<Category>(); } }
+        public DbSet<Product> Products { get { return this.Set<Product>(); } }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

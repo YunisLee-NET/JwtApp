@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace Parviz.JwtApp.Back.Migrations
+namespace Parviz.JwtApp.Back.Persistance.Migrations
 {
-    public partial class IntitialCreate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

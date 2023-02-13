@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "0cMEoJRfpwu1Rvbr9g1X5jcoCFqnFDy3VAJK/e87RC3MvEIAR9BaYArjFMnoTv0Tb+f167jg0krx/Ew1Kvkbbw==",
+  "dgSpecHash": "moDhHXlLG4ezfWzLlYcnOuTCccYpD9CTvD4NWzfJObox9UHAC904t6orsibOFqy7vjWb2uTc+nlmeh3tD1Zm5g==",
   "success": true,
   "projectFilePath": "E:\\Dersler\\MVC\\Parviz.JwtApp\\Parviz.JwtApp.Back\\Parviz.JwtApp.Back.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Yunisli Parviz\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.13\\microsoft.entityframeworkcore.6.0.13.nupkg.sha512",
