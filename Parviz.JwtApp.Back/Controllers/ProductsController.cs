@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Parviz.JwtApp.Back.Core.Application.Features.CQRS.Commands;
@@ -6,6 +7,7 @@ using Parviz.JwtApp.Back.Core.Application.Features.CQRS.Queries;
 
 namespace Parviz.JwtApp.Back.Controllers
 {
+    [Authorize(Roles ="Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase

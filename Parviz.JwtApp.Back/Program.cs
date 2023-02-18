@@ -1,13 +1,34 @@
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Parviz.JwtApp.Back.Core.Application.Interfaces;
 using Parviz.JwtApp.Back.Core.Application.Mappings;
+using Parviz.JwtApp.Back.Infrastucture.Tools;
 using Parviz.JwtApp.Back.Persistance.Context;
 using Parviz.JwtApp.Back.Persistance.Repositories;
 using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Add JWT
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidIssuer = JwtTokenDefaults.ValidIssuer,
+        ValidAudience = JwtTokenDefaults.ValidAudience,
+
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF32.GetBytes(JwtTokenDefaults.SigningKey)),
+        ValidateIssuerSigningKey = true,
+        ValidateLifetime = true, // Token zamanini yoxlayir ki, vaxti kecib ya nece
+        ClockSkew = TimeSpan.Zero, //server ile klient arasinda gecikmeni sifira endirir
+    };
+});
+
 
 // Add services to the container.
 
@@ -27,7 +48,8 @@ builder.Services.AddAutoMapper(opt =>
 {
     opt.AddProfiles(new List<Profile>()
     {
-        new ProductProfile()
+        new ProductProfile(),
+        new CategoryProfile()
     });
 });
 var app = builder.Build();
@@ -41,7 +63,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
+
+app.UseAuthentication();  //Sisteme girisine icaze verir.
+app.UseAuthorization();  //Role gore girise icaze verir.
 
 app.MapControllers();
 

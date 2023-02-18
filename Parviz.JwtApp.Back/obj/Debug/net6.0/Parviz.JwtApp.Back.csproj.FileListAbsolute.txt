@@ -65,3 +65,4 @@ E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\AutoMapper.Exte
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.dll
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.Contracts.dll
 E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+E:\Dersler\MVC\Parviz.JwtApp\Parviz.JwtApp.Back\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
